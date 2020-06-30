@@ -1,0 +1,32 @@
+.header {
+    display: flex;
+    width: 100%;
+}
+.header img {
+    width: 200px;
+    height: 108px;
+
+    margin-left: 30px;
+    margin-right: 120px;
+    margin-bottom: 20px;
+}
+ .search {
+    margin-top: 35px;
+    display: flex;
+}
+ .search .input input{
+    width: 420px;
+    height: 50px;
+    border: 2px solid #110259;
+} 
+.search .btn button {
+    width: 135px;
+    height: 50px;
+    border: none;
+    background-color:#110259;
+    font-size: 22px;
+    color: white;
+}
+.authorization img {
+    width: 20px;
+}

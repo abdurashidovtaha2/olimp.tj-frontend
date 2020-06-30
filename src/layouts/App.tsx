@@ -8,11 +8,12 @@ import MMTCategory from "./MMTCategory";
 import MMTQuestion from "./MMTQuestion";
 import { SignUp } from "../components/SignUp";
 import { LogInAdmin } from "../components/LogInAdmin";
+import { Header } from "../components/Header";
 
 export const App: React.FC = () => {
   return (
     <Router history={history}>
-      <Link to={Routes.root}>Olimp.tj</Link>
+      <Header />
       <Switch>
         <Route exact path={Routes.root} component={FrontPage} />
         <Route exact path={Routes.signup} component={SignUp}></Route>
