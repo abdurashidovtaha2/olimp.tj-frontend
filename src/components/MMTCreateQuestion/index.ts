@@ -3,7 +3,7 @@ import { MMTCreateQuestionViewProps } from './model';
 import history from '../../history';
 import { Routes } from '../../routes';
 
-export const MMTCreateQuestion = () => {
+export const MMTCreateQuestion: React.FC = () => {
     const handleClick = (): void => {
         history.push(Routes.category);
     }

@@ -11,7 +11,7 @@ export const LogInAdminView: React.FC<LogInAdminViewProps> = (props) => {
                 <input type="password" placeholder="Пароль" name="password" onChange={props.handleChange} />
                 <button>Даромад</button>
             </form>
-            <Link to={Routes.root}>StudentLogIn</Link>
+            <Link to={Routes.login}>StudentLogIn</Link>
         </>
     )
 }

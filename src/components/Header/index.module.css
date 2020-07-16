@@ -2,19 +2,21 @@
     display: flex;
     width: 100%;
 }
-.header img {
+.logo {
     width: 200px;
     height: 108px;
+    cursor: pointer;
 
-    margin-left: 30px;
-    margin-right: 120px;
-    margin-bottom: 20px;
+    margin: 7px 120px 3px 50px;
 }
  .search {
-    margin-top: 35px;
     display: flex;
+     
+    margin-top: 35px;
 }
  .search .input input{
+    font-size: 22px;
+    padding-left: 10px;
     width: 420px;
     height: 50px;
     border: 2px solid #110259;
@@ -27,6 +29,53 @@
     font-size: 22px;
     color: white;
 }
-.authorization img {
-    width: 20px;
+.logIn, .signUp {
+    display: flex;
+    cursor: pointer;
+}
+.logIn p, .signUp p {
+    margin-top: -3px;
+}
+.logIn img {
+    width: 19px;
+    height: 25px;
+
+    margin-right: 9px;
+}
+.signUp img {
+    width: 23px;
+    height: 23px;
+
+    margin-right: 5px;
+}
+.authorization {
+    font-size: 20px;
+    font-weight: bold;
+    color: #110259;
+
+    margin: 27px 0 0px 100px;
+}
+.authorized {
+    margin: auto;
+}
+.greeting p {
+    text-align: center;
+    font-size: 25px;
+}
+.greeting .username {
+    font-weight: bold;
+    font-size: 28px;
+    color: #110259;
+}
+.logOut {
+    margin: 0 auto;
+    width: 150px;
+}
+.logOut button {
+    font-size: 20px;
+    width: 100%;
+    border-radius: 5px;
+    background-color: #110259;
+    color: white;
+    outline: none;
 }

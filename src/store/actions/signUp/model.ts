@@ -1,7 +1,9 @@
 import { ActionTypes } from "..";
 
+export type SignUpActions = ISignUpFieldChange | IDoSignUpRequest | IDoSignUpFailure | IDoSignUpSuccess;
+
 export interface ISignUpFieldChange {
-    type: ActionTypes.SIGNUP_FIELD_CHANGE
+    type: ActionTypes.SIGNUP_FIELD_CHANGE,
     payload: {
         field: string,
         value: string

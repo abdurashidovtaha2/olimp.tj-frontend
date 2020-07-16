@@ -1,0 +1,18 @@
+.lessonBlock {
+    width: 25%;
+    display: inline-block;
+}
+.lesson {
+    width: 78%;
+    text-align: center;
+    cursor: pointer;
+
+    margin: 20px auto 0  auto;
+}
+.lesson p {
+    font-weight: bold;
+    font-size: 25px;
+}
+.lessonImg {
+    width: 150px;
+}

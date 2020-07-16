@@ -1,0 +1,41 @@
+.carouselBlock {
+    overflow: hidden;
+    display: flex;
+}
+.description {
+    background-color: #070124;
+    width: 30%;
+    height: 100%;
+    color: white;
+
+    padding-left: 25px;
+    padding-right: 20px;
+}
+.title {
+    font-size: 30px;
+}
+.titleDetails {
+    font-size: 20px;
+}
+.imageBlock {
+    width: 70%;
+    height: 100%;
+    background-color: #110259;
+    font-size: 60px;
+    color: white;
+}
+.imageBlock p {
+    transform: rotate(-20deg);
+    overflow: hidden;
+
+    margin-top: 130px;
+    margin-left: 100px;
+}
+.controllers {
+    color: white;
+    font-size: 20px;
+
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-left: 50px;
+}

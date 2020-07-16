@@ -1,6 +1,7 @@
-import { IAddUserDetails } from "./model";
+import { IAddUserDetails, IDoLogOut } from "./model";
 import { ActionTypes } from "..";
 import { IUser } from "../../reducers/user/model";
+import { clearStorage } from "../../../utils/localStorage";
 
 export const addUserDetails = (token: string, user: IUser): IAddUserDetails => {
     return {
@@ -9,5 +10,12 @@ export const addUserDetails = (token: string, user: IUser): IAddUserDetails => {
             token,
             user
         }
+    }
+}
+
+export const doLogOut = (): IDoLogOut => {
+    clearStorage();
+    return {
+        type: ActionTypes.DO_LOGOUT
     }
 }

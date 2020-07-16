@@ -1,0 +1,19 @@
+.navbar {
+    display: flex;
+    background-color: #110259;
+    color: white;
+    font-size: 21px;
+
+    margin: 10px 0 40px 0;
+}
+.navbar div {
+    margin-left: 60px;
+    margin-top: 14px;
+    margin-bottom: 6px;
+}
+.navbar div p {
+    cursor: pointer;
+}
+.navbar div p:hover {
+    color: red;
+}

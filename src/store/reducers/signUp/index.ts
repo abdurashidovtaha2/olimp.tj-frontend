@@ -1,6 +1,7 @@
 import { ISignUpState } from "./model";
 import { Reducer } from "redux";
 import { ActionTypes } from "../../actions";
+import { SignUpActions } from "../../actions/signUp/model";
 
 const initialState: ISignUpState = {
     loading: false,
@@ -13,7 +14,7 @@ const initialState: ISignUpState = {
     town: ""
 }
 
-export const SignUpReducer: Reducer<ISignUpState, any> = (state = initialState, action) => {
+export const SignUpReducer: Reducer<ISignUpState, SignUpActions> = (state = initialState, action) => {
     switch (action.type) {
         case ActionTypes.SIGNUP_FIELD_CHANGE:
             const { field, value } = action.payload;

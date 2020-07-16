@@ -1,0 +1,23 @@
+.sectionsHeader {
+    margin: auto;
+    display: flex;
+    background-color: #6E7675;
+    height: 100px;
+
+    margin-top: 0px;
+}
+.lastPage {
+    font-size: 30px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: #C3F1FF;
+    cursor: pointer;
+
+    margin: auto 0 auto 50px;
+}
+.currentPage {
+    font-size: 35px;
+    color: white;
+
+    margin: auto 0 auto 250px;
+}

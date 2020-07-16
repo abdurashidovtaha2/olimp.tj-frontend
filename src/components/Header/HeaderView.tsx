@@ -1,15 +1,15 @@
 import React from 'react';
 import style from './index.module.css';
-import logo from '../../shared/images/logo.jpg';
-import signIn from '../../shared/images/signIn.jpg';
-import signUp from '../../shared/images/signUp.jpg';
+import logo from '../../shared/images/logo-min.png';
+import logIn from '../../shared/images/logIn-min.jpg';
+import signUp from '../../shared/images/signUp-min.jpg';
 import { HeaderViewProps } from './model';
+import { Routes } from '../../routes';
 
 export const HeaderView: React.FC<HeaderViewProps> = (props) => {
-    console.log(props.token)
     return (
         <header className={style.header}>
-            <img src={logo} alt="Браузерро нав кунед" />
+            <img src={logo} className={style.logo} alt="Браузерро нав кунед" onClick={() => props.handlePush(Routes.root)} />
             <div className={style.search}>
                 <div className={style.input}>
                     <input type="text" />
@@ -23,21 +23,23 @@ export const HeaderView: React.FC<HeaderViewProps> = (props) => {
                     ?
                     <div className={style.authorized}>
                         <div className={style.greeting}>
-
+                            <p>
+                                Салом <span className={style.username}>{props.username}</span>
+                            </p>
                         </div>
                         <div className={style.logOut}>
-
+                            <button onClick={props.handleLogOut}>Баромад</button>
                         </div>
                     </div>
                     :
                     <div className={style.authorization}>
-                        <div className={style.signIn}>
-                            <img src={signIn} alt=""/>
+                        <div className={style.logIn} onClick={() => props.triggerModal("logIn")}>
+                            <img src={logIn} alt="" />
                             <p>ДОХИЛ ШУДАН</p>
                         </div>
-                        <div className={style.signUp}>
-                            <img src={signUp} alt=""/>
-                            <p>Аз КАЙД ГУЗАШТАН</p>
+                        <div className={style.signUp} onClick={() => props.triggerModal("signUp")}>
+                            <img src={signUp} alt="" />
+                            <p>АЗ КАЙД ГУЗАШТАН</p>
                         </div>
                     </div>
             }
