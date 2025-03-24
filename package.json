@@ -16,7 +16,7 @@
     "axios": "^0.19.2",
     "history": "^4.10.1",
     "i18next-browser-languagedetector": "^4.0.2",
-    "nanoid": "^2.1.11",
+    "nanoid": "^5.1.5",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",
     "react-i18next": "^11.3.3",
